@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    username: root
+    password: ZHBroot!!2018
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://zhb.lovegq.cn:3306/ApolloConfigDB?useUnicode=true&characterEncoding=utf8&useSSL=false
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    status-page-url-path: /info
+    health-check-url-path: /health
+  client:
+    serviceUrl:
+      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8761/eureka/,http://eureka3:8761/eureka/
+    eurekaServiceUrlPollIntervalSeconds: 60
