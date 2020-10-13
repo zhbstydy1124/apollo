@@ -2,7 +2,7 @@ spring:
   datasource:
     username: root
     password: ZHBroot!!2018
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://zhb.lovegq.cn:3366/ApolloConfigDB?useUnicode=true&characterEncoding=utf8&useSSL=false
 eureka:
   instance:
